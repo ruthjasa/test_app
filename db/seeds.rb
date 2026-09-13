@@ -20,11 +20,11 @@ elsif Rails.env.test?
   puts "Test database seeded with #{Book.count} books!"
 else
   Book.create!([
-    { title: "Prod Book 1" },
-    { title: "Prod Book 2" },
-    { title: "Prod Book 3" },
-    { title: "Prod Book 4" },
-    { title: "Prod Book 5" }
+    { title: "Dev Book 1" },
+    { title: "Dev Book 2" },
+    { title: "Dev Book 3" },
+    { title: "Dev Book 4" },
+    { title: "Dev Book 5" }
   ])
   puts "Production database seeded with #{Book.count} books!"
 end
