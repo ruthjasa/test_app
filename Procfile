@@ -1,1 +1,1 @@
-release: bundle exec rails db:migrate
+release: bundle exec rails db:migrate && RAILS_ENV=production bundle exec rails db:seed
